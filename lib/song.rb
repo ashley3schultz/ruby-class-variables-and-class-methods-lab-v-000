@@ -37,9 +37,10 @@ class Song
   end 
   
   def self.genre_count
-    g_hash = genres
+    g_hash = {}
     @@genres.each {|g| 
-    g_hash[g] = 
+    num = g_hash[g] + 1
+    g_hash[g] = () 
     if !g_hash.include? g}
     
 end 
