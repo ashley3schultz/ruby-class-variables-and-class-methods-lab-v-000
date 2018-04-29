@@ -45,5 +45,13 @@ class Song
     g_hash
   end
   
-        #binding.pry
+  def self.artist_count
+    a_hash = {}
+    @@genres.each {|a| 
+    num = a_hash[a] || 0
+    num += 1
+    a_hash[a] = num}
+    a_hash
+  end
+  
 end 
