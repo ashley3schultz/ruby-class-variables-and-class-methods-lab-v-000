@@ -40,8 +40,7 @@ class Song
     g_hash = {}
     @@genres.each {|g| 
     num = g_hash[g] || 0
-    num += 1
-    g_hash[g] = num}
+    g_hash[g] = num + 1}
     g_hash
   end
   
@@ -49,7 +48,6 @@ class Song
     a_hash = {}
     @@artists.each {|a| 
     num = a_hash[a] || 0
-    #num += 1
     a_hash[a] = num + 1}
     a_hash
   end
