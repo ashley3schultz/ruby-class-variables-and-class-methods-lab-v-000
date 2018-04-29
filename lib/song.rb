@@ -35,4 +35,9 @@ class Song
     @@artists.each {|a| a_array << a if !a_array.include? a}
     a_array
   end 
+  
+  def self.genre_count
+    g_array = []
+    @@genres.each {|g| g_array << g if !g_array.include? g}
+    
 end 
