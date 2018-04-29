@@ -49,8 +49,8 @@ class Song
     a_hash = {}
     @@genres.each {|a| 
     num = a_hash[a] || 0
-    num += 1
-    a_hash[a] = num}
+    #num += 1
+    a_hash[a] = num + 1}
     a_hash
   end
   
