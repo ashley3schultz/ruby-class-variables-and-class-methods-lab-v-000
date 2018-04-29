@@ -41,9 +41,9 @@ class Song
     @@genres.each {|g| 
     num = g_hash[g]
     num += 1
-    g_hash[g] = num
-      binding.pry
-    }
+    g_hash[g] = num}
     g_hash
   end
+  
+        binding.pry
 end 
