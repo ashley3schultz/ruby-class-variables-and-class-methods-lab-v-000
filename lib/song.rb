@@ -37,7 +37,7 @@ class Song
   end 
   
   def self.genre_count
-    g_array = []
+    g_hash = []
     @@genres.each {|g| g_array << g if !g_array.include? g}
     
 end 
