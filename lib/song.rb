@@ -40,7 +40,6 @@ class Song
     g_hash = {}
     @@genres.each {|g| 
     num = g_hash[g] + 1
-    g_hash[g] = () 
-    if !g_hash.include? g}
+    g_hash[g] = num}
     
 end 
